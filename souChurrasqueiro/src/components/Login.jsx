@@ -1,7 +1,8 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import souChurras from "../assets/img/souChurras.jpg";
-import { TextField, Button, Box, Card, CardContent, Typography, Link } from "@mui/material";
+import { TextField, Button, Box, Card, CardContent, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
+
 
 const Login = () => {
   return (
@@ -50,7 +51,7 @@ const Login = () => {
             </Button>
           </form>
           <Typography variant="body2" sx={{ mt: 2 }}>
-            Ainda não tem uma conta? <Link href="/cadastro"> Cadastre-se</Link>
+          Ainda não tem uma conta? <Link to="/cadastro">Cadastre-se</Link>
           </Typography>
         </CardContent>
       </Card>
